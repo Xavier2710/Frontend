@@ -36,6 +36,12 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
+    title: 'Creaciones Literarias',
+    path: '/CreacionesLiterarias',
+    icon: <IoIcons.IoMdBook />,
+    cName: 'nav-text'
+  },
+  {
     title: 'Reportes',
     path: '/Reportes',
     icon: <IoIcons.IoMdHelpCircle />,
