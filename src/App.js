@@ -9,6 +9,7 @@ import Preguntas from "./Page/Preguntas";
 import Aside from "./componentes/Aside";
 import Home from "./Page/Home";
 import Footer from './componentes/Footer';
+import Estudiantes from './Page/Estudiantes';
 
 export default function App() {
   const location = useLocation();
@@ -25,6 +26,8 @@ export default function App() {
       <Route path="/Login" element={<Login />} />
       <Route path="/Dimensiones" element={<Dimensiones />} />
       <Route path="/Preguntas" element={<Preguntas />} />
+      <Route path="/Registro" element={<Registro />} />
+      <Route path="/Estudiantes" element={<Estudiantes />} />
     </Routes>
 
     <Footer/>

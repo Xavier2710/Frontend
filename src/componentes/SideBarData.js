@@ -13,7 +13,7 @@ export const SidebarData = [
   },
   {
     title: 'Estudiantes',
-    path: '/',
+    path: '/Estudiantes',
     icon: <IoIcons.IoIosSchool />,
     cName: 'nav-text'
   },

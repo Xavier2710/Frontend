@@ -55,6 +55,16 @@ const Dimensiones = () => {
           margin="normal"
           required
           fullWidth
+          id="codigo"
+          label="Ingrese Codigo"
+          name="codigo"
+          value={descripcionDimension}
+          onChange={(e) => setDescripcionDimension(e.target.value)}
+        />
+        <TextField
+          margin="normal"
+          required
+          fullWidth
           id="nombreDimension"
           label="Nombre de la Dimensión"
           name="nombreDimension"
@@ -85,6 +95,7 @@ const Dimensiones = () => {
           <Table sx={{ minWidth: 'auto' }}>
             <TableHead>
               <TableRow>
+                <TableCell>Codigo</TableCell>
                 <TableCell>Dimension</TableCell>
                 <TableCell>Descripcion</TableCell>
                 <TableCell>Acciones</TableCell>

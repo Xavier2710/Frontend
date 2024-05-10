@@ -23,6 +23,7 @@ import InputLabel from '@mui/material/InputLabel';
 
 export default function Preguntas() {
     const [nombrePregunta, setNombrePregunta] = useState('');
+    const [codigo, setCodigo] = useState('');
     const [dimensionSeleccionada, setDimensionSeleccionada] = useState('');
     const [data, setData] = useState([]); 
   
@@ -52,7 +53,15 @@ export default function Preguntas() {
           Preguntas
         </Typography>
         <Box component="form" noValidate sx={{ mt: 1 }} onSubmit={handleSubmit}>
-
+          <TextField
+            margin="normal"
+            required
+            fullWidth
+            id="codigo"
+            label="Codigo"
+            name="codigo"
+            onChange={(e) => setCodigo(e.target.value)}
+          />
           <TextField
             margin="normal"
             required
@@ -88,6 +97,7 @@ export default function Preguntas() {
             <Table sx={{ minWidth: 'auto' }}>
               <TableHead>
                 <TableRow>
+                  <TableCell>Codigo</TableCell>
                   <TableCell>Pregunta</TableCell>
                   <TableCell>Dimensión</TableCell>
                   <TableCell>Acciones</TableCell>
