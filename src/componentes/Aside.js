@@ -21,7 +21,7 @@ export default function Aside() {
           <FaBars onClick={showSidebar} />
         </Link>
         <div className='titulo-container'>
-          <h1 className='page-title'>Medicina</h1>
+          <h1 className='page-title'>Impacto de atención primaria y salud pública en estudiantes de médicina</h1>
         </div>
       </div>
       <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
