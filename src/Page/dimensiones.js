@@ -3,10 +3,6 @@ import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Avatar from '@mui/material/Avatar';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import TableContainer from '@mui/material/TableContainer';
 import Table from '@mui/material/Table';
@@ -20,7 +16,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 const Dimensiones = () => {
   const [nombreDimension, setNombreDimension] = useState('');
   const [descripcionDimension, setDescripcionDimension] = useState('');
-  const [data, setData] = useState([]); 
+  const [data] = useState([]); 
 
   const handleSubmit = (event) => {
     event.preventDefault();

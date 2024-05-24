@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import React from 'react';
+import { Routes, Route, useLocation } from "react-router-dom";
 import './App.css';
 import Login from "./Page/Login";
-import ProtectedRoutes from "./pageauth/ProtectedRoutes";
 import Registro from "./Page/Registro";
 import Dimensiones from "./Page/dimensiones";
 import Preguntas from "./Page/Preguntas";
@@ -16,21 +15,21 @@ export default function App() {
 
 
   const showHeader = location.pathname !== '/Login';
-
+  console.log(showHeader);
   return (
     <div className="App">
-    <Aside/>
-   
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/Login" element={<Login />} />
-      <Route path="/Dimensiones" element={<Dimensiones />} />
-      <Route path="/Preguntas" element={<Preguntas />} />
-      <Route path="/Registro" element={<Registro />} />
-      <Route path="/Estudiantes" element={<Estudiantes />} />
-    </Routes>
+      <Aside />
 
-    <Footer/>
-  </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Dimensiones" element={<Dimensiones />} />
+        <Route path="/Preguntas" element={<Preguntas />} />
+        <Route path="/Registro" element={<Registro />} />
+        <Route path="/Estudiantes" element={<Estudiantes />} />
+      </Routes>
+
+      <Footer />
+    </div>
   );
 }

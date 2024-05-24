@@ -1,15 +1,5 @@
 import React from "react";
 import Container from "@mui/material/Container";
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-} from "recharts";
-
 import "./estilos.css";
 
 const Home = ({ sidebarOpen }) => {
