@@ -12,6 +12,8 @@ import TableCell from '@mui/material/TableCell';
 import IconButton from '@mui/material/IconButton';
 import CreateIcon from '@mui/icons-material/Create';
 import DeleteIcon from '@mui/icons-material/Delete';
+import TextField from '@mui/material/TextField'; 
+import Button from '@mui/material/Button';
 
 const Dimensiones = () => {
   const [nombreDimension, setNombreDimension] = useState('');
